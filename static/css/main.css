@@ -1,0 +1,21 @@
+body {
+    margin: 0 auto;
+    background: none;
+    color: white;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+main {
+    background-color: slategray;
+    min-height: calc(100vh - 50px);
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
