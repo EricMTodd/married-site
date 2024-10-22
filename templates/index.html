@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Caitlyn and Eric</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    </head>
-    <body>
-        <header>
-
-        </header>
-        <main>
-            <h1>Index</h1>
-        </main>
-    </body>
-</html>
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">{% endblock %}
+{% block content %}
+    <h1>Index Content</h1>
+{% endblock %}
