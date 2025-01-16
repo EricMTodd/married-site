@@ -1,0 +1,46 @@
+:root {
+    --black: #050609;
+    --pale-dogwood: #F5D0C5;
+    --buff: #D69F7E;
+    --bole: #774936;
+    --black-bean: #3C0000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    color: var(--black-bean);
+    font-size: 21px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+nav {
+    height: 50px;
+    background-color: var(--buff);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    background-color: var(--pale-dogwood);
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: var(--buff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
