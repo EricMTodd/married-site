@@ -22,12 +22,27 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+nav > a {
+    text-decoration: none;
+    color: var(--black-bean);
+}
+
+nav > a:hover {
+    color: var(--pale-dogwood);
+}
+
+nav > a:active {
+    color: var(--black);
+}
+
 nav {
-    height: 50px;
+    height: 49px;
     background-color: var(--buff);
     padding: 0 15px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    border-bottom: 1px solid var(--black-bean);
 }
 
 main {
@@ -37,9 +52,10 @@ main {
 }
 
 footer {
-    height: 100px;
+    height: 99px;
     width: 100%;
     background-color: var(--buff);
+    border-top: 1px solid var(--black-bean);
     display: flex;
     justify-content: center;
     align-items: center;
