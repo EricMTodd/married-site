@@ -3,7 +3,12 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
 {% endblock %}
 {% block content %}
-    <h1>Home</h1>
+    <h1 class="married">We're Married!</h1>
+    <hr>
+    <h2 class="date">September 14th, 2024</h2>
 {% endblock %}
