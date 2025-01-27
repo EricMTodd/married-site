@@ -22,6 +22,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+nav {
+    height: 49px;
+    background-color: var(--buff);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--black-bean);
+    position: sticky;
+    top: 0;
+}
+
 nav > a {
     text-decoration: none;
     color: var(--black-bean);
@@ -33,16 +44,6 @@ nav > a:hover {
 
 nav > a:active {
     color: var(--black);
-}
-
-nav {
-    height: 49px;
-    background-color: var(--buff);
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid var(--black-bean);
 }
 
 main {
@@ -59,4 +60,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cne {
+    font-size: 45px;
 }
