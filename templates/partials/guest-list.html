@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Guest List{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" src="{{ url_for('static', filename='css/guest-list.css') }}">
+{% endblock %}
+{% block content %}
+    <h1>Guest List</h1>
+    <ul>
+        <li>Eric Todd</li>
+        <li>Caitlyn Todd</li>
+        <li>Caila</li>
+        <li>Britania</li>
+        <li>Jessie</li>
+        <li>Dorian</li>
+        <li>Sarah</li>
+        <li>Silver</li>
+        <li>Stan</li>
+        <li>Becky</li>
+        <li>Chris</li>
+        <li>Dakota</li>
+        <li>Devin</li>
+        <li>Gabby</li>
+        <li>Brenna</li>
+        <li>Chris B.</li>
+        <li>Zoey</li>
+        <li>Eljay</li>
+        <li>Pia</li>
+        <li>Dennis</li>
+        <li>Jordan</li>
+        <li>Dana</li>
+        <li>August</li>
+        <li>Karen</li>
+        <li>Raul</li>
+    </ul>
+{% endblock %}
