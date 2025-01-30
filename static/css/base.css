@@ -1,9 +1,10 @@
 :root {
-    --black: #050609;
-    --pale-dogwood: #F5D0C5;
-    --buff: #D69F7E;
-    --bole: #774936;
-    --black-bean: #3C0000;
+    --eerie-black: #23251F;
+    --bistre: #40271B;
+    --rust: #A64C21;
+    --beaver: #9F7E6F;
+    --dim-gray: #656B73;
+    --earth-yellow: #F1B26A;
 }
 
 html {
@@ -14,8 +15,9 @@ body {
     margin: 0 auto;
     height: 100vh;
     width: 100vw;
-    color: var(--black-bean);
+    color: var(--bistre);
     font-size: 21px;
+    text-shadow: 0px 0px 3px var(--beaver);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,40 +25,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
-    height: 49px;
-    background-color: var(--buff);
+    height: 48px;
+    background-color: var(--earth-yellow);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid var(--black-bean);
+    border-bottom: 2px solid var(--eerie-black);
     position: sticky;
     top: 0;
 }
 
 nav > a {
     text-decoration: none;
-    color: var(--black-bean);
+    color: var(--bistre);
+    transition: 0.15s;
 }
 
 nav > a:hover {
-    color: var(--pale-dogwood);
+    color: var(--rust);
+    text-shadow: 0px 0px 5px var(--rust);
+    font-size: 22px;
 }
 
 nav > a:active {
-    color: var(--black);
+    color: var(--dim-gray);
 }
 
 main {
     min-height: calc(100vh - 50px);
     width: 100%;
-    background-color: var(--pale-dogwood);
+    background-color: var(--beaver);
 }
 
 footer {
-    height: 99px;
+    height: 98px;
     width: 100%;
-    background-color: var(--buff);
-    border-top: 1px solid var(--black-bean);
+    background-color: var(--earth-yellow);
+    border-top: 2px solid var(--eerie-black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,4 +69,8 @@ footer {
 
 .cne {
     font-size: 45px;
+}
+
+.cne:hover {
+    font-size: 47px;
 }
