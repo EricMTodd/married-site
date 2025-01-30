@@ -2,4 +2,4 @@
 
 # Color schemes
 
-![colors](color-schemes/image.png)
+![colors](color-schemes/image0.png)
