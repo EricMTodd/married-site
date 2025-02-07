@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Gallery{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+{% endblock %}
+{% block content %}
+    <h1>Engagement</h1>
+    <ul>
+        {% for i in engagement_pictures %}
+                <img src="{{ url_for('static', filename='images/Engagement/' + i) }}" alt="{{ i }}" />
+        {% endfor %}
+    </ul>
+{% endblock %}

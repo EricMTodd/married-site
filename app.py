@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import os
 
 app = Flask(__name__)
 
@@ -8,7 +9,8 @@ def home():
 
 @app.route('/gallery')
 def gallery():
-    return render_template('partials/gallery.html')
+    engagement_pictures = os.listdir(os.path.join(app.static_folder, "images/Engagement"))
+    return render_template('partials/gallery.html', engagement_pictures=engagement_pictures)
 
 @app.route('/guest-list')
 def guest_list():

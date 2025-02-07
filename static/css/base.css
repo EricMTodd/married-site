@@ -18,6 +18,7 @@ body {
     color: var(--bistre);
     font-size: 21px;
     text-shadow: 0px 0px 3px var(--beaver);
+    background-color: var(--beaver);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,7 +55,6 @@ nav > a:active {
 main {
     min-height: calc(100vh - 50px);
     width: 100%;
-    background-color: var(--beaver);
 }
 
 footer {
