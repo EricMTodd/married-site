@@ -8,7 +8,37 @@
     <h1>Engagement</h1>
     <ul>
         {% for i in engagement_pictures %}
-                <img src="{{ url_for('static', filename='images/Engagement/' + i) }}" alt="{{ i }}" />
+            <img src="{{ url_for('static', filename='images/Engagement/' + i) }}" alt="{{ i }}" />
+        {% endfor %}
+    </ul>
+    <h1>Getting Ready</h1>
+    <ul>
+        {% for i in getting_ready_pictures %}
+            <img src="{{ url_for('static', filename='images/Getting ready/' + i) }}" alt="{{ i }}" />
+        {% endfor %}
+    </ul>
+    <h1>Mr. & Mrs.</h1>
+    <ul>
+        {% for i in mr_and_mrs_pictures %}
+            <img src="{{ url_for('static', filename='images/Mr & Mrs/' +i) }}" alt="{{ i }}" />
+        {% endfor %}
+    </ul>
+    <h1>Portraits</h1>
+    <ul>
+        {% for i in portraits_pictures %}
+            <img src="{{ url_for('static', filename='images/Portraits/' + i) }}" alt="{{ i }}" />
+        {% endfor %}
+    </ul>
+    <h1>Reception</h1>
+    <ul>
+        {% for i in reception_pictures %}
+            <img src="{{ url_for('static', filename='images/Reception/' + i) }}" alt="{{ i }}" />
+        {% endfor %}
+    </ul>
+    <h1>Rings</h1>
+    <ul>
+        {% for i in rings_pictures %}
+            <img src="{{ url_for('static', filename='images/Rings/' + i) }}" alt="{{ i }}" />
         {% endfor %}
     </ul>
 {% endblock %}

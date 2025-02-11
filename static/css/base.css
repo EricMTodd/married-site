@@ -32,7 +32,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid var(--eerie-black);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
 }
 
@@ -55,6 +56,7 @@ nav > a:active {
 main {
     min-height: calc(100vh - 50px);
     width: 100%;
+    margin-top: 50px;
 }
 
 footer {
