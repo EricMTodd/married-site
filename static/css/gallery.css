@@ -1,15 +1,10 @@
-main {
-    margin-left: 215px;
-    width: calc(100% - 250px);
-}
-
 ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: space-evenly;
     margin-top: 0;
-    padding-left: 0;
+    padding-left: 180px;
 }
 
 h1:first-of-type {
@@ -28,10 +23,25 @@ hr {
 img {
     height: 300px;
     margin-top: 21px;
-    box-shadow: -3px -2px 10px var(--eerie-black);
+    box-shadow: -3px -2px 10px 1px var(--eerie-black);
     border: 8px solid linen;
     background-color: var(--eerie-black);
     padding: 2px;
+}
+
+aside {
+    background-color: var(--earth-yellow);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    padding: 60px 10px 0px 15px;
+    margin-top: 48px;
+    border-right: 2px solid var(--eerie-black);
 }
 
 a {
@@ -50,19 +60,13 @@ a:active {
     color: var(--dim-gray);
 }
 
-.gallery-sidebar {
+.lampshade {
+    height: 98px;
+    width: 50px;
     background-color: var(--earth-yellow);
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 150px;
-    height: 100%;
-    padding: 25px 10px 0px 15px;
-    margin-top: 50px;
-    border-right: 2px solid var(--eerie-black);
-    z-index: -1;
+    left: 147px;
+    position: absolute;
+    margin-top: 2px;
 }
 
 #anchor {

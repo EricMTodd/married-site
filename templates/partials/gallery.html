@@ -5,13 +5,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
 {% endblock %}
 {% block content %}
-    <div class="gallery-sidebar">
-        <a href="#anchor">Engagement</a>
-        <a href="#getting-ready">Getting Ready</a>
-        <a href="#mr-and-mrs">Mr. & Mrs.</a>
-        <a href="#portraits">Portraits</a>
-        <a href="#reception">Reception</a>
-        <a href="#rings">Rings</a>
+    <div class="container"></div>
+        <aside>
+            <a href="#anchor">Engagement</a>
+            <a href="#getting-ready">Getting Ready</a>
+            <a href="#mr-and-mrs">Mr. & Mrs.</a>
+            <a href="#portraits">Portraits</a>
+            <a href="#reception">Reception</a>
+            <a href="#rings">Rings</a>
+        </aside>
     </div>
     <div id="anchor"></div>
     <h1 id="engagement">Engagement</h1>
@@ -41,8 +43,8 @@
             <img src="{{ url_for('static', filename='images/Portraits/' + i) }}" alt="{{ i }}" />
         {% endfor %}
     </ul>
-    <h1 id="reception">Reception</h1>
     <hr>
+    <h1 id="reception">Reception</h1>
     <ul>
         {% for i in reception_pictures %}
             <img src="{{ url_for('static', filename='images/Reception/' + i) }}" alt="{{ i }}" />
@@ -55,4 +57,5 @@
             <img src="{{ url_for('static', filename='images/Rings/' + i) }}" alt="{{ i }}" />
         {% endfor %}
     </ul>
+    <div class="lampshade"></div>
 {% endblock %}
